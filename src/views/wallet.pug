@@ -1,0 +1,449 @@
+extends _layouts/master
+
+block content
+    .page-wrapper
+        .container
+            .row
+                .col-lg-6
+                    .title-page.mb-4
+                        h1 Wallet
+                    .item-wallet-lg.mb-4.position-relative
+                        .d-flex.align-items-center
+                            .icon
+                                img(src="client/images/7-1.svg", alt="")
+                            .content
+                                .balance 700.000 USD
+                                .text Main Wallet
+                        .banner.position-absolute
+                            img(src="client/images/7-1-2.svg", alt="")
+                    .item-wallet-lg.mb-4.position-relative
+                        .d-flex.align-items-center
+                            .icon
+                                img(src="client/images/7-2.svg", alt="")
+                            .content
+                                .balance 700.000 USD
+                                .text Live wallet
+                        .banner.position-absolute
+                            img(src="client/images/7-2-2.svg", alt="")
+                    .item-wallet-lg.mb-4.position-relative
+                        .d-flex.align-items-center
+                            .icon
+                                img(src="client/images/7-3.svg", alt="")
+                            .content
+                                .balance 700.000 USD
+                                .text.mb-1 Demo wallet
+                                button.btn.btn-view Refill balance
+                        .banner.position-absolute
+                            img(src="client/images/7-3-2.svg", alt="")
+                .col-lg-6
+                    .item-card-sm.custom-withdraw-main.mb-4
+                        ul#pills-tab.nav.nav-pills.mb-3.custom-tabs.d-flex.justify-content-center(role='tablist')
+                            li.nav-item(role='presentation')
+                                button#pills-wallet1-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#pills-wallet1' type='button' role='tab' aria-controls='pills-wallet1' aria-selected='true') Deposit
+                            li.nav-item(role='presentation')
+                                button#pills-wallet2-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-wallet2' type='button' role='tab' aria-controls='pills-wallet2' aria-selected='false') Withdraw
+                            li.nav-item(role='presentation')
+                                button#pills-wallet3-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-wallet3' type='button' role='tab' aria-controls='pills-wallet3' aria-selected='false') Transfer
+                        #pills-tabContent.tab-content
+                            #pills-wallet1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-wallet1-tab' tabindex='0')
+                                .block-deposit-sm.text-center
+                                    .title-lg.mb-5 
+                                        h3 Deposit USD
+                                    .row
+                                        .col-md-6.col-sm-6
+                                            .item-coin-sm.mb-3(data-bs-toggle="modal" data-bs-target="#DepositModal")
+                                                .content 
+                                                    .icon.mb-4
+                                                        img(src="client/images/7-4.svg", alt="")
+                                                    .name USDT
+                                                    .desc 
+                                                        | USDT Smart Chain 
+                                                        br
+                                                        | (BEP-20)
+                                        .col-md-6.col-sm-6
+                                            .item-coin-sm.mb-3
+                                                .content 
+                                                    .icon.mb-4
+                                                        img(src="client/images/7-4.svg", alt="")
+                                                    .name USDT
+                                                    .desc 
+                                                        | USDT Smart Chain 
+                                                        br
+                                                        | (TRC-20)
+                            #pills-wallet2.tab-pane.fade(role='tabpanel' aria-labelledby='pills-wallet2-tab' tabindex='0') 
+                                .block-deposit-sm
+                                    .text-center
+                                        .title-lg
+                                            h3 Withdraw
+                                        .balance-main 700 BGX
+                                        .desc-sm.mb-3 Available Balance
+                                    .max-w-form.m-auto
+                                        form.form-default(action="") 
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') Amount
+                                                .item-form-sm.position-relative
+                                                    input.form-control(type='text' placeholder='')
+                                                    .icon.position-absolute
+                                                        button.btn.btn-max MAX
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') Choose Network
+                                                input.form-control(type='text' placeholder='')
+                                                .desc.text-sm Please make sure the network matches, otherwise assets may be lost.
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') To Address
+                                                input.form-control(type='text' placeholder='')
+                                            .text-end 
+                                                button.btn.btn-gradient-green Submit
+                            #pills-wallet3.tab-pane.fade(role='tabpanel' aria-labelledby='pills-wallet3-tab' tabindex='0') 
+                                .block-deposit-sm.text-center
+                                    .title-lg.mb-5 
+                                        h3 Transfer
+                                    .row
+                                        .col-md-6.col-sm-6
+                                            .item-coin-sm.mb-3(data-bs-toggle="modal" data-bs-target="#TradeAccountModal")
+                                                .content 
+                                                    .icon.mb-4
+                                                        img(src="client/images/8-1.svg", alt="")
+                                                    .name Trade Account
+                                                    .desc 
+                                                        | USDT Smart Chain 
+                                                        br
+                                                        | (BEP-20)
+                                        .col-md-6.col-sm-6
+                                            .item-coin-sm.mb-3(data-bs-toggle="modal" data-bs-target="#UserAccountModal")
+                                                .content 
+                                                    .icon.mb-4
+                                                        img(src="client/images/8-2.svg", alt="")
+                                                    .name User Account
+                                                    .desc 
+                                                        | USDT Smart Chain 
+                                                        br
+                                                        | (TRC-20)
+            .row
+                .col-md-12 
+                    .item-card-sm.custom-tabs-table 
+                        ul#pills-tab-2.nav.nav-pills.mb-3.custom-tabs(role='tablist-2')
+                            li.nav-item(role='presentation')
+                                button#pills-table1-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#pills-table1' type='button' role='tab' aria-controls='pills-table1' aria-selected='true') Deposit
+                            li.nav-item(role='presentation')
+                                button#pills-table2-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-table2' type='button' role='tab' aria-controls='pills-table2' aria-selected='false') Withdraw
+                            li.nav-item(role='presentation')
+                                button#pills-table3-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-table3' type='button' role='tab' aria-controls='pills-table3' aria-selected='false') Transfer
+                        #pills-tabContent.tab-content
+                            #pills-table1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-table1-tab' tabindex='0')
+                                .table-custom-1.mb-4
+                                    .table-responsive 
+                                        table.table.table-separate.table-striped
+                                            thead
+                                                tr
+                                                    th No.
+                                                    th Amount
+                                                    th Note
+                                                    th Time
+                                                    th Time
+                                            tbody
+                                                tr
+                                                    td 1
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 2
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 3
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 4
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 5
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 6
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 7
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 8
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 9
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 10
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                            #pills-table2.tab-pane.fade(role='tabpanel' aria-labelledby='pills-table2-tab' tabindex='0') 
+                                .table-custom-1.mb-4
+                                    .table-responsive 
+                                        table.table.table-separate.table-striped
+                                            thead
+                                                tr
+                                                    th No.
+                                                    th Amount
+                                                    th Note
+                                                    th Time
+                                                    th Time
+                                            tbody
+                                                tr
+                                                    td 1
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 2
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 3
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 4
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 5
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 6
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 7
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 8
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 9
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 10
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                            #pills-table3.tab-pane.fade(role='tabpanel' aria-labelledby='pills-table3-tab' tabindex='0') 
+                                .table-custom-1.mb-4
+                                    .table-responsive 
+                                        table.table.table-separate.table-striped
+                                            thead
+                                                tr
+                                                    th No.
+                                                    th Amount
+                                                    th Note
+                                                    th Time
+                                                    th Time
+                                            tbody
+                                                tr
+                                                    td 1
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 2
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 3
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 4
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 5
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 6
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 7
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 8
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 9
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 10
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+        
+        // Modal
+        #DepositModal.modal.modal-custom-main.fade(tabindex='-1' aria-labelledby='DepositModalLabel' aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-body
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            img(src="client/images/close.svg", alt="")
+                        .title-lg.text-center.mb-4
+                            h3 Deposit USD
+                        .block-qr-code 
+                            .qr-img.text-center.mb-4
+                                img(src="client/images/qr.jpg", alt="")
+                            form.form-default(action="") 
+                                .mb-4.item-form-sm
+                                    label.form-label(for='') USDT Deposit Address
+                                    input.form-control(type='text' placeholder='' value="5yuuy68u67iur5ey5u76u57y……….55")
+                                .row
+                                    .col-md-6 
+                                        .item-deposit-info-sm.mb-3
+                                            .text Network
+                                            .desc USDT Smart Chain (BEP20)
+                                    .col-md-6 
+                                        .item-deposit-info-sm.mb-3
+                                            .text Minium Deposit
+                                            .desc 1 USDT
+                                .desc-bottom.mb-4
+                                    | Send only USDT to this deposit address.
+                                    br
+                                    | Make sure that the network for depositing matches the network for 
+                                    br
+                                    | withdrawing, otherwise assets may be lost.
+                                .text-center
+                                    button.btn.btn-gradient-green.min-w-140 Copy Address
+        // Modal
+        #UserAccountModal.modal.modal-custom-main.fade(tabindex='-1' aria-labelledby='UserAccountModalLabel' aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-body
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            img(src="client/images/close.svg", alt="")
+                        .title-lg.text-center.mb-4
+                            h3 User Account
+                        .block-qr-code 
+                            .qr-img.text-center.mb-4
+                                img(src="client/images/qr.jpg", alt="")
+                            form.form-default(action="") 
+                                .row
+                                    .col-md-6 
+                                        .item-deposit-info-sm.mb-3.custom-lg
+                                            .text Account equity
+                                            .desc 700 USDT
+                                    .col-md-6 
+                                        .item-deposit-info-sm.mb-3.custom-lg
+                                            .text Minium Transfer Amount
+                                            .desc 1 USDT
+                                .mb-3.item-form-sm
+                                    label.form-label(for='') Account
+                                    input.form-control(type='text' placeholder='' value="")
+                                .mb-3.item-form-sm
+                                    label.form-label(for='') Amount
+                                    input.form-control(type='text' placeholder='' value="")
+                                .mb-3.item-form-sm
+                                    label.form-label(for='') 2FA
+                                    input.form-control(type='text' placeholder='' value="")
+                                .mb-3.d-flex.justify-content-between.item-value-fee
+                                    label.form-label(for='') Received
+                                    .value  
+                                        .text = 0.00 USDT
+                                        .desc Fee: = 0 USDT
+
+                                .text-center
+                                    button.btn.btn-gradient-green.min-w-140 Transfer
+        // Modal
+        #TradeAccountModal.modal.modal-custom-main.fade(tabindex='-1' aria-labelledby='TradeAccountModalLabel' aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-body
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            img(src="client/images/close.svg", alt="")
+                        .title-lg.text-center.mb-4
+                            h3 Trade Account
+                        form.form-default(action="") 
+                            .mb-3.item-form-sm
+                                label.form-label(for='') To
+                                input.form-control(type='text' placeholder='Main account' value="")
+                            .icon-transfer-sm.text-center
+                                img(src="client/images/9-1.svg", alt="")
+                            .mb-3.item-form-sm
+                                label.form-label(for='') From
+                                input.form-control(type='text' placeholder='Live account' value="")
+                            .mb-3.item-form-sm
+                                label.form-label(for='') Amount
+                                input.form-control(type='text' placeholder='' value="")
+                            .text-center
+                                button.btn.btn-gradient-green.min-w-140 Transfer
+                                
+                       
+
+                                
+                       

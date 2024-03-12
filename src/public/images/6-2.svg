@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2eaa66"/>
+      <stop offset="0.768" stop-color="#1ed37c"/>
+      <stop offset="1" stop-color="#3ec76d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1520" data-name="Group 1520" transform="translate(-588.5 -278.5)">
+    <rect id="Rectangle_242" data-name="Rectangle 242" width="79" height="79" rx="22" transform="translate(589 279)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    <path id="profit-generate-profit-make-money-mint-money-svgrepo-com" d="M40.578,10.186h-8.7V2H13.8v8.186H5.1a2.729,2.729,0,0,0-2.729,2.729V27.924h9.494V21.1H13.8V45.661H31.88V21.1H33.7v6.822h9.608V12.915A2.729,2.729,0,0,0,40.578,10.186ZM30.175,40.2a5.724,5.724,0,0,0-3.782,3.759H19.2a5.725,5.725,0,0,0-3.69-3.73v-8.62a7.7,7.7,0,0,0,7.334,4.87,7.7,7.7,0,0,0,7.334-4.87Zm-9.189-9.981c.428,0,.714-.286,1.142-1.285.428-1.285,1.142-2.284,2.284-2.284a2.289,2.289,0,0,1,2.284,2h1.142V29.93h-1a8.717,8.717,0,0,1-.428,1.856l-1.427-.428a4.1,4.1,0,0,0,.286-1.713c0-.714-.286-1.142-.714-1.142s-.714.428-1.142,1.427c-.571,1.427-1.142,2.141-2.284,2.141a2.745,2.745,0,0,1-2.141-2.141H17.845V28.646h1a9.48,9.48,0,0,1,.428-2.141l1.427.428a4.125,4.125,0,0,0-.571,2Q20.129,30.216,20.986,30.216Zm9.189-3.123a7.7,7.7,0,0,0-7.334-4.87,7.7,7.7,0,0,0-7.334,4.87V21.1H30.175Zm0-16.907H15.507V3.706H30.175Zm2.16,8.186A1.364,1.364,0,1,1,33.7,17.009,1.364,1.364,0,0,1,32.335,18.373Z" transform="translate(605.659 295.5)" fill="#fff"/>
+  </g>
+</svg>

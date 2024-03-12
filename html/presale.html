@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Bigex</title>
+    <link rel="icon" href="./client/images/icon.png" type="image/gif" sizes="16x16">
+    <!-- main css-->
+    <link rel="stylesheet" href="client/css/bootstrap.min.css">
+    <link rel="stylesheet" href="client/css/fontawesome.min.css">
+    <link rel="stylesheet" href="client/css/hover-min.css">
+    <link rel="stylesheet" href="client/css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="bg-full"> 
+        <header class="mb-5">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container"><a class="navbar-brand" href="#"> <img src="client/images/logo.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><img src="client/images/4-1-menu.svg" alt=""></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link position-relative active" aria-current="page" href="index.html">Dashboard</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="wallet.html">Wallet</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="comission.html">Comission</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="copy-trade.html">Copy trade</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="presale.html">Presale</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="account.html">Account</a></li>
+                </ul>
+                <div class="action-right d-flex align-items-center">
+                  <div class="item-icon-login d-flex align-items-center"><a data-bs-toggle="modal" data-bs-target="#languageModal"><img src="client/images/2-flag-en.svg" alt=""></a><a href="#"><img src="client/images/2-2-login.svg" alt=""></a></div>
+                  <div class="item-user"> <a href="login.html"><img src="client/images/2-1-user-avatar-filled.svg" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Modal-->
+          <div class="modal modal-custom-main fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="client/images/close.svg" alt=""></button>
+                  <div class="title-lg text-center mb-4">
+                    <h3>Change Language</h3>
+                  </div>
+                  <div class="list-language"> 
+                    <div class="row">
+                      <div class="col-4"> 
+                        <div class="item-language mb-3"><a class="d-flex align-items-center" href=""> 
+                            <div class="icon"><img src="client/images/2-flag-en.svg" alt=""></div>
+                            <div class="text">English</div></a></div>
+                      </div>
+                      <div class="col-4"> 
+                        <div class="item-language mb-3"><a class="d-flex align-items-center" href=""> 
+                            <div class="icon"><img src="client/images/2-flag-en.svg" alt=""></div>
+                            <div class="text">English</div></a></div>
+                      </div>
+                      <div class="col-4"> 
+                        <div class="item-language mb-3"><a class="d-flex align-items-center" href=""> 
+                            <div class="icon"><img src="client/images/2-flag-en.svg" alt=""></div>
+                            <div class="text">English</div></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="page-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12"> 
+                <div class="title-page mb-4">
+                  <h1>Presale</h1>
+                </div>
+                <div class="block-presale">  
+                  <div class="text-center">
+                    <div class="title-lg mb-5"> 
+                      <h3>Buy</h3>
+                      <div class="desc">How much do you want to buy?</div>
+                    </div>
+                    <div class="item-balance-main mb-3">
+                      <div class="balance">USDT 2.000</div>
+                      <div class="line m-auto"></div>
+                      <div class="desc-sm">You get 14,463,100 BGX</div>
+                    </div>
+                  </div>
+                  <div class="block-coin-main mb-3">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div class="item-name-sm d-flex align-items-center"> 
+                            <div class="icon"><img src="client/images/13-1.svg" alt=""></div>
+                            <div class="text-name">USDT</div>
+                          </div>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <div class="item-name-sm d-flex align-items-center"> 
+                              <div class="icon"><img src="client/images/13-4.svg" alt=""></div>
+                              <div class="text-name">BGX</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="item-name-sm d-flex align-items-center"> 
+                              <div class="icon"><img src="client/images/13-1.svg" alt=""></div>
+                              <div class="text-name">BGX</div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="icon-midd"><img src="client/images/13-3.svg" alt=""></div>
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div class="item-name-sm d-flex align-items-center"> 
+                            <div class="icon"><img src="client/images/13-4.svg" alt=""></div>
+                            <div class="text-name">BGX</div>
+                          </div>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <div class="item-name-sm d-flex align-items-center"> 
+                              <div class="icon"><img src="client/images/13-4.svg" alt=""></div>
+                              <div class="text-name">BGX</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="item-name-sm d-flex align-items-center"> 
+                              <div class="icon"><img src="client/images/13-1.svg" alt=""></div>
+                              <div class="text-name">USDT            </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="max-w-form m-auto">
+                    <div class="text mb-3">Payment method</div>
+                    <div class="item-mainaccount-sm d-flex align-items-center mb-3">
+                      <div class="icon"><img src="client/images/13-1.svg" alt=""></div>
+                      <div class="content"> 
+                        <div class="title">Main Account</div>
+                        <div class="value">10,000 USDT</div>
+                      </div>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-between item-value-fee">
+                      <div class="text">Best rate via</div>
+                      <div class="value"> 
+                        <div class="text-sm">1 USDT ≈ 114,463 BGX</div>
+                        <div class="desc-sm">Includes all fees</div>
+                      </div>
+                    </div>
+                    <button class="btn btn-gradient-green w-100">Buy BGX</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="hvr-float" id="backtop" onclick="backtotop()" title="Go to top"><img src="client/images/4-3-top.svg" alt=""></button>
+      </div>
+    </div>
+    <!-- main js-->
+    <script src="client/js/all.min.js"></script>
+    <script src="client/js/jquery.min.js"></script>
+    <script src="client/js/moment.js"></script>
+    <script src="client/js/popper.min.js"></script>
+    <script src="client/js/bootstrap.min.js"></script>
+    <script src="client/js/main.js"></script>
+    <script>
+      $(function () {
+          if ($(window).width() > 769) {
+              $('.menu .dropdown > a').click(function () {
+                  location.href = this.href;
+              });
+          }
+      })
+    </script>
+  </body>
+</html>

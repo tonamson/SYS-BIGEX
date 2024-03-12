@@ -1,0 +1,71 @@
+extends _layouts/master
+
+block content
+    .page-wrapper
+        .container
+            .row
+                .col-md-12 
+                    .title-page.mb-4
+                        h1 Presale
+                    .block-presale   
+                        .text-center
+                            .title-lg.mb-5 
+                                h3 Buy
+                                .desc How much do you want to buy?
+                            .item-balance-main.mb-3
+                                .balance USDT 2.000
+                                .line.m-auto
+                                .desc-sm You get 14,463,100 BGX
+                        .block-coin-main.mb-3
+                            .d-flex.justify-content-center.align-items-center
+                                .dropdown
+                                    button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                        .item-name-sm.d-flex.align-items-center 
+                                            .icon
+                                                img(src="client/images/13-1.svg", alt="")
+                                            .text-name USDT
+                                    ul.dropdown-menu
+                                        li
+                                            .item-name-sm.d-flex.align-items-center 
+                                                .icon
+                                                    img(src="client/images/13-4.svg", alt="")
+                                                .text-name BGX
+                                        li
+                                            .item-name-sm.d-flex.align-items-center 
+                                                .icon
+                                                    img(src="client/images/13-1.svg", alt="")
+                                                .text-name BGX
+                                .icon-midd
+                                    img(src="client/images/13-3.svg", alt="")
+                                .dropdown
+                                    button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                        .item-name-sm.d-flex.align-items-center 
+                                            .icon
+                                                img(src="client/images/13-4.svg", alt="")
+                                            .text-name BGX
+                                    ul.dropdown-menu
+                                        li
+                                            .item-name-sm.d-flex.align-items-center 
+                                                .icon
+                                                    img(src="client/images/13-4.svg", alt="")
+                                                .text-name BGX
+                                        li
+                                            .item-name-sm.d-flex.align-items-center 
+                                                .icon
+                                                    img(src="client/images/13-1.svg", alt="")
+                                                .text-name USDT            
+
+                        .max-w-form.m-auto
+                            .text.mb-3 Payment method
+                            .item-mainaccount-sm.d-flex.align-items-center.mb-3
+                                .icon
+                                    img(src="client/images/13-1.svg", alt="")
+                                .content 
+                                    .title Main Account
+                                    .value 10,000 USDT
+                            .mb-3.d-flex.justify-content-between.item-value-fee
+                                    .text Best rate via
+                                    .value  
+                                        .text-sm 1 USDT ≈ 114,463 BGX
+                                        .desc-sm Includes all fees
+                            button.btn.btn-gradient-green.w-100 Buy BGX

@@ -1,0 +1,32 @@
+extends _layouts/master-login
+
+block content
+    .page-login 
+        .block-login-main 
+            .logo.mb-5
+                a(href="login.html")
+                    img(src="client/images/logo.svg", alt="")
+            .block-form-login 
+                .title-block.mb-4 
+                    h3.text-uppercase Sign In
+                    .desc Get a bot & earn money
+                form(action="") 
+                    .block-h-form 
+                        .item-form-sm.position-relative.mb-3 
+                            input.form-control(type="text" placeholder="User")
+                            .icon.position-absolute
+                                img(src="client/images/form/1-user-filled.svg", alt="")
+                        .item-form-sm.position-relative.mb-3
+                            input.form-control(type="Password" placeholder="Password")
+                            .icon.position-absolute
+                                img(src="client/images/form/3-lock-solid.svg", alt="")
+                        .mb-3.text-end 
+                            a.text-orange(href="#") Forgot Password ? 
+                    .mb-4 
+                        button.btn.btn-gradient-green.w-100 Submit
+                    .link-bottom
+                        | Not a Member yet? 
+                        a.eff-time(href='sign-up.html') Sign Up
+        .banner-right
+            a(href="#")
+                img(src="client/images/bg/1.jpg", alt="")

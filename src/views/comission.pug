@@ -1,0 +1,337 @@
+extends _layouts/master
+
+block content
+    .page-wrapper
+        .container
+            .row
+                .col-md-12 
+                    .title-page.mb-4
+                        h1 Comission
+                    .row.list-item-comission
+                        .col-lg-3.col-smd-6.col-sm-6 
+                            .item-comission.d-flex.align-items-center.mb-4
+                                .icon
+                                    img(src="client/images/6-1.svg", alt="")
+                                .content-sm 
+                                    .balance 700.000 USD
+                                    .desc Commission Claimable
+                        .col-lg-3.col-smd-6.col-sm-6 
+                            .item-comission.d-flex.align-items-center.mb-4
+                                .icon
+                                    img(src="client/images/6-2.svg", alt="")
+                                .content-sm 
+                                    .balance 700.000 USD
+                                    .desc Commission IB
+                        .col-lg-3.col-smd-6.col-sm-6 
+                            .item-comission.d-flex.align-items-center.mb-4
+                                .icon
+                                    img(src="client/images/6-3.svg", alt="")
+                                .content-sm 
+                                    .balance 700.000 USD
+                                    .desc Commission Matching
+                        .col-lg-3.col-smd-6.col-sm-6 
+                            .item-comission.d-flex.align-items-center.mb-4
+                                .icon
+                                    img(src="client/images/6-4.svg", alt="")
+                                .content-sm 
+                                    .balance 700.000 USD
+                                    .desc Total Income
+                    .item-card-sm.custom-tabs-table 
+                        ul#pills-tab.nav.nav-pills.mb-3.custom-tabs(role='tablist')
+                            li.nav-item(role='presentation')
+                                button#pills-table1-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#pills-table1' type='button' role='tab' aria-controls='pills-table1' aria-selected='true') Level History
+                            li.nav-item(role='presentation')
+                                button#pills-table2-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-table2' type='button' role='tab' aria-controls='pills-table2' aria-selected='false') Commission IB
+                            li.nav-item(role='presentation')
+                                button#pills-table3-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-table3' type='button' role='tab' aria-controls='pills-table3' aria-selected='false') Commission Matching
+                            li.nav-item(role='presentation')
+                                button#pills-table4-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-table4' type='button' role='tab' aria-controls='pills-table4' aria-selected='false') Commission Payout
+                        #pills-tabContent.tab-content
+                            #pills-table1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-table1-tab' tabindex='0')
+                                .table-custom-1.mb-4
+                                    .table-responsive 
+                                        table.table.table-separate.table-striped
+                                            thead
+                                                tr
+                                                    th No.
+                                                    th Amount
+                                                    th Note
+                                                    th Time
+                                                    th Time
+                                            tbody
+                                                tr
+                                                    td 1
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 2
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 3
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 4
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 5
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 6
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 7
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 8
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 9
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 10
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                            #pills-table2.tab-pane.fade(role='tabpanel' aria-labelledby='pills-table2-tab' tabindex='0') 
+                                .table-custom-1.mb-4
+                                    .table-responsive 
+                                        table.table.table-separate.table-striped
+                                            thead
+                                                tr
+                                                    th No.
+                                                    th Amount
+                                                    th Note
+                                                    th Time
+                                                    th Time
+                                            tbody
+                                                tr
+                                                    td 1
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 2
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 3
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 4
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 5
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 6
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 7
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 8
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 9
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 10
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                            #pills-table3.tab-pane.fade(role='tabpanel' aria-labelledby='pills-table3-tab' tabindex='0') 
+                                .table-custom-1.mb-4
+                                    .table-responsive 
+                                        table.table.table-separate.table-striped
+                                            thead
+                                                tr
+                                                    th No.
+                                                    th Amount
+                                                    th Note
+                                                    th Time
+                                                    th Time
+                                            tbody
+                                                tr
+                                                    td 1
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 2
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 3
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 4
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 5
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 6
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 7
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 8
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 9
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 10
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                            #pills-table4.tab-pane.fade(role='tabpanel' aria-labelledby='pills-table4-tab' tabindex='0') 
+                                .table-custom-1.mb-4
+                                    .table-responsive 
+                                        table.table.table-separate.table-striped
+                                            thead
+                                                tr
+                                                    th No.
+                                                    th Amount
+                                                    th Note
+                                                    th Time
+                                                    th Time
+                                            tbody
+                                                tr
+                                                    td 1
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 2
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 3
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 4
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 5
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 6
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 7
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 8
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 9
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18
+                                                tr
+                                                    td 10
+                                                    td 12 BGX
+                                                    td Interest #76567TGJFHF 
+                                                    td 2024-02-02 01:04:18
+                                                    td 2024-02-02 01:04:18

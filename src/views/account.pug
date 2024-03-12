@@ -1,0 +1,126 @@
+extends _layouts/master
+
+block content
+    .page-wrapper
+        .container
+            .row
+                .col-md-12 
+                    .title-page.mb-4
+                        h1 Account
+                    .block-account-main.mb-4.position-relative
+                        .item-account-sm.d-flex.justify-content-between.mb-5
+                            .d-flex.align-items-center
+                                .avatar 
+                                    img(src="client/images/avatar.jpg", alt="")
+                                .content 
+                                    .user Anonymous - User - e51f8
+                                    .badge.badge-verified Verified
+                            .action-right   
+                                a.link-update(data-bs-toggle="modal" data-bs-target="#PersonalinformationModal") Updete
+                        .item-info-account.position-relative
+                            .title.mb-3 Personal information
+                            .list 
+                                .item.d-flex.justify-content-between.mb-3
+                                    .text Legal Name
+                                    .value Elon Reeve Musk 
+                                .item.d-flex.justify-content-between.mb-3
+                                    .text Date of Birth
+                                    .value 1971 - 6 - 28 
+                                .item.d-flex.justify-content-between.mb-3
+                                    .text Address
+                                    .value in Pretoria, Transvaal, South Africa 
+                                .item.d-flex.justify-content-between.mb-3
+                                    .text Identification Documents
+                                    .value ID card, 05********************42 
+                                .item.d-flex.justify-content-between.mb-3
+                                    .text Email Address
+                                    .value musk****@gmail.com 
+                            .banner-bottom.position-absolute
+                                img(src="client/images/11-1.svg", alt="")
+                    .block-account-icon.d-flex.align-items-center.justify-content-between.mb-4.position-relative
+                        .d-flex.align-items-center
+                            .icon
+                                img(src="client/images/12-1-lock-solid.svg", alt="")
+                            .content 
+                                .title Change Password
+                                .desc you want to change a new password
+                        a.link-update(data-bs-toggle="modal" data-bs-target="#ChangePasswordModal") Updete
+                    .block-account-icon.d-flex.align-items-center.justify-content-between.mb-4.position-relative
+                        .d-flex.align-items-center
+                            .icon
+                                img(src="client/images/12-2-2fa.svg", alt="")
+                            .content 
+                                .title Two-Factor Authentication
+                                .desc Enable Two-factor Authentication
+                        a.link-update(data-bs-toggle="modal" data-bs-target="#TwoFactorAuthentication") Updete
+
+                    #PersonalinformationModal.modal.modal-custom-main.fade(tabindex='-1' aria-labelledby='PersonalinformationModalLabel' aria-hidden='true')
+                        .modal-dialog
+                            .modal-content
+                                .modal-body
+                                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                        img(src="client/images/close.svg", alt="")
+                                    .title-lg.text-center.mb-4
+                                        h3 Personal information
+                                    .block-update-user  
+                                        .avatar.mb-3
+                                            img(src="client/images/avatar.jpg", alt="")
+                                        form(action="")
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') Sponsor
+                                                input.form-control(type='text' placeholder='' value="Elon Reeve Musk ") 
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') Full Name
+                                                input.form-control(type='text' placeholder='' value="Elon Reeve Musk ")
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') Username
+                                                input.form-control(type='text' placeholder='' value="Musk")
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') Email
+                                                input.form-control(type='text' placeholder='' value="elonreevemusk@gmail.com")
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') Phone
+                                                input.form-control(type='text' placeholder='' value="0777.*****9")
+                                            .text-center 
+                                                button.btn.btn-gradient-green.min-w-140 Submit
+                    #ChangePasswordModal.modal.modal-custom-main.fade(tabindex='-1' aria-labelledby='ChangePasswordModalLabel' aria-hidden='true')
+                        .modal-dialog
+                            .modal-content
+                                .modal-body
+                                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                        img(src="client/images/close.svg", alt="")
+                                    .title-lg.text-center.mb-4
+                                        h3 Change Password
+                                    .block-update-user  
+                                        form(action="")
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') Current Password
+                                                input.form-control(type='Password' placeholder='' value="") 
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') New Password
+                                                input.form-control(type='Password' placeholder='' value="")
+                                            .text-center 
+                                                button.btn.btn-gradient-green.min-w-140 Submit
+                    #TwoFactorAuthentication.modal.modal-custom-main.fade(tabindex='-1' aria-labelledby='TwoFactorAuthenticationLabel' aria-hidden='true')
+                        .modal-dialog
+                            .modal-content
+                                .modal-body
+                                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                        img(src="client/images/close.svg", alt="")
+                                    .title-lg.text-center.mb-4
+                                        h3 Two-Factor Authentication
+                                    .block-update-user  
+                                        form.form-default(action="")
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') Enable Two-factor Authentication
+                                                .desc Using an Google Authetication app scan this QR code
+                                            .mb-3 
+                                                .qr-code.text-center
+                                                    img(src="client/images/qr-2.jpg", alt="")
+                                            .mb-3.item-note-code If you having trouble using the QR code, select manual entry on your app, and enter this code: MHD2U4ERBPZGF47N
+
+                                            .mb-3.item-form-sm
+                                                label.form-label(for='') New Password
+                                                input.form-control(type='Password' placeholder='' value="")
+                                            .text-center 
+                                                button.btn.btn-gradient-green.min-w-140 Submit

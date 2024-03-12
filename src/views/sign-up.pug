@@ -1,0 +1,42 @@
+extends _layouts/master-login
+
+block content
+    .page-login 
+        .block-login-main 
+            .logo.mb-5
+                a(href="login.html")
+                    img(src="client/images/logo.svg", alt="")
+            .block-form-login 
+                .title-block.mb-4 
+                    h3.text-uppercase Create an Account
+                    .desc Get a bot & earn money
+                form(action="") 
+                    .block-h-form.mb-3
+                        .item-form-sm.position-relative.mb-3 
+                            input.form-control(type="text" placeholder="User Referral")
+                            .icon.position-absolute
+                                img(src="client/images/form/1-user-filled.svg", alt="")
+                        .item-form-sm.position-relative.mb-3 
+                            input.form-control(type="text" placeholder="User name")
+                            .icon.position-absolute
+                                img(src="client/images/form/1-user-filled.svg", alt="")
+                        .item-form-sm.position-relative.mb-3
+                            input.form-control(type="Email" placeholder="Email")
+                            .icon.position-absolute
+                                img(src="client/images/form/2-email-solid-badged.svg", alt="")
+                        .item-form-sm.position-relative.mb-3
+                            input.form-control(type="Password" placeholder="Password")
+                            .icon.position-absolute
+                                img(src="client/images/form/3-lock-solid.svg", alt="")
+                        .item-form-sm.position-relative.mb-3
+                            input.form-control(type="Password" placeholder="Confirm Password")
+                            .icon.position-absolute
+                                img(src="client/images/form/3-lock-solid.svg", alt="")
+                    .mb-4 
+                        button.btn.btn-gradient-green.w-100 Submit
+                    .link-bottom
+                        | Already a member ? 
+                        a.eff-time(href='sign-in.html') SIGN IN
+        .banner-right
+            a(href="#")
+                img(src="client/images/bg/1.jpg", alt="")

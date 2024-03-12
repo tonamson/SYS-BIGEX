@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Bigex</title>
+    <link rel="icon" href="./client/images/icon.png" type="image/gif" sizes="16x16">
+    <!-- main css-->
+    <link rel="stylesheet" href="client/css/bootstrap.min.css">
+    <link rel="stylesheet" href="client/css/fontawesome.min.css">
+    <link rel="stylesheet" href="client/css/hover-min.css">
+    <link rel="stylesheet" href="client/css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="bg-full"> 
+        <header class="mb-5">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container"><a class="navbar-brand" href="#"> <img src="client/images/logo.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><img src="client/images/4-1-menu.svg" alt=""></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link position-relative active" aria-current="page" href="index.html">Dashboard</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="wallet.html">Wallet</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="comission.html">Comission</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="copy-trade.html">Copy trade</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="presale.html">Presale</a></li>
+                  <li class="nav-item"><a class="nav-link position-relative" href="account.html">Account</a></li>
+                </ul>
+                <div class="action-right d-flex align-items-center">
+                  <div class="item-icon-login d-flex align-items-center"><a data-bs-toggle="modal" data-bs-target="#languageModal"><img src="client/images/2-flag-en.svg" alt=""></a><a href="#"><img src="client/images/2-2-login.svg" alt=""></a></div>
+                  <div class="item-user"> <a href="login.html"><img src="client/images/2-1-user-avatar-filled.svg" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Modal-->
+          <div class="modal modal-custom-main fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><img src="client/images/close.svg" alt=""></button>
+                  <div class="title-lg text-center mb-4">
+                    <h3>Change Language</h3>
+                  </div>
+                  <div class="list-language"> 
+                    <div class="row">
+                      <div class="col-4"> 
+                        <div class="item-language mb-3"><a class="d-flex align-items-center" href=""> 
+                            <div class="icon"><img src="client/images/2-flag-en.svg" alt=""></div>
+                            <div class="text">English</div></a></div>
+                      </div>
+                      <div class="col-4"> 
+                        <div class="item-language mb-3"><a class="d-flex align-items-center" href=""> 
+                            <div class="icon"><img src="client/images/2-flag-en.svg" alt=""></div>
+                            <div class="text">English</div></a></div>
+                      </div>
+                      <div class="col-4"> 
+                        <div class="item-language mb-3"><a class="d-flex align-items-center" href=""> 
+                            <div class="icon"><img src="client/images/2-flag-en.svg" alt=""></div>
+                            <div class="text">English</div></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="page-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12"> 
+                <div class="block-user-banner mb-4 position-relative">
+                  <h3 class="mb-2 text-uppercase">Hi nguyenharrynam</h3>
+                  <div class="desc mb-5">Welcome back!</div><a class="btn btn-gradient-green" href="">Copy Trade</a>
+                  <div class="banner-right position-absolute"><a href="#"><img src="client/images/1-1.svg" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4"> 
+                <div class="item-card-sm mb-4 position-relative"> 
+                  <div class="title-sm d-flex align-items-end align-items-center mb-3">
+                    <div class="icon"><img src="client/images/1-2.svg" alt=""></div>Copy Trade
+                  </div>
+                  <div class="content-sm"> 
+                    <div class="balance mb-4">700.777.55 USD</div>
+                    <div class="item-icon-left-sm d-flex align-items-end align-items-center">
+                      <div class="icon"><img src="client/images/1-3.svg" alt=""></div>
+                      <div class="content"> 
+                        <div class="balance-sm">700 USD</div>
+                        <div class="text">Profit</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-card-sm mb-4 position-relative custom-wallet custom-h-sm">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="title-sm d-flex align-items-end align-items-center">
+                      <div class="icon"><img src="client/images/1-7-walletalt.svg" alt=""></div>Wallet
+                    </div>
+                    <button class="btn btn-view">View Transaction</button>
+                  </div>
+                  <div class="content-sm position-relative">
+                    <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                      <div class="icon"><img src="client/images/1-8.svg" alt=""></div>
+                      <div class="content"> 
+                        <div class="balance-sm">700.777.55 USD</div>
+                        <div class="text">USD Wallet</div>
+                      </div>
+                    </div>
+                    <div class="item-icon-left-sm d-flex align-items-end align-items-center">
+                      <div class="icon"><img src="client/images/1-9.svg" alt=""></div>
+                      <div class="content"> 
+                        <div class="balance-sm">700.777.55 BGX</div>
+                        <div class="text">BGX Wallet</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banner-bottom position-absolute"><img src="client/images/1-10.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="col-lg-4"> 
+                <div class="item-card-sm mb-4 position-relative custom-referral">
+                  <div class="title-sm d-flex align-items-end align-items-center mb-3">
+                    <div class="icon"><img src="client/images/1-4.svg" alt=""></div>Referral
+                  </div>
+                  <div class="content-sm"> 
+                    <div class="form-copy-link position-relative"> 
+                      <input class="form-control" type="text" value="Https://bigex.us/register/89898.html">
+                      <button class="btn position-absolute"><img src="client/images/1-5-copy-solid.svg" alt=""></button>
+                    </div>
+                    <div class="banner-bottom position-absolute"><a class="position-absolute" href="#"><img src="client/images/1-6.svg" alt=""></a></div>
+                  </div>
+                </div>
+                <div class="item-card-sm mb-4 position-relative custom-h-sm">
+                  <div class="content-sm"> 
+                    <div class="row">
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-11.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">700</div>
+                            <div class="text">Referral Member</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-12.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">$700</div>
+                            <div class="text">Total income</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-13.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">$700</div>
+                            <div class="text">IB Bonus</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-14.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">$700</div>
+                            <div class="text">Matching Bonus</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4"> 
+                <div class="item-card-sm mb-4 position-relative custom-h-lg">
+                  <div class="d-flex justify-content-between align-items-center mb-3 custom-select">
+                    <div class="title-sm d-flex align-items-end align-items-center">
+                      <div class="icon"><img src="client/images/1-15.svg" alt=""></div>Summary
+                    </div>
+                    <select class="form-control custom-form-sm" name="">
+                      <option value="">2024/03/04 - 2024/03/10 </option>
+                    </select>
+                  </div>
+                  <div class="content-sm"> 
+                    <div class="text-center item-level-icon mb-3">
+                      <div class="icon mb-1"><img src="client/images/1-16.svg" alt=""></div>Level 
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-18.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">$700</div>
+                            <div class="text">VTP Week</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-11.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">7</div>
+                            <div class="text">F1 Active Week</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-19.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">$700</div>
+                            <div class="text">Total VTT Week</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-20.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">700 USD</div>
+                            <div class="text">Total Bonus</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-20.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">700 USD</div>
+                            <div class="text">IB Bonus</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6"> 
+                        <div class="item-icon-left-sm d-flex align-items-end align-items-center mb-4">
+                          <div class="icon"><img src="client/images/1-20.svg" alt=""></div>
+                          <div class="content"> 
+                            <div class="balance-sm">700 USD</div>
+                            <div class="text">Matching Bonus</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row"> 
+              <div class="col-md-4">  
+                <div class="item-card-sm mb-4 position-relative min-h-lg">
+                  <div class="title-sm mb-3 custom-desc">
+                    <div class="d-flex align-items-end align-items-center">
+                      <div class="icon"><img src="client/images/1-17.svg" alt=""></div>
+                      <div class="text">Activities</div>
+                    </div>
+                    <div class="desc">Recent Activities </div>
+                  </div>
+                  <div class="content-sm"> 
+                    <div class="list-time-line position-relative">
+                      <div class="d-flex item position-relative mb-5"> 
+                        <div class="time">03:08</div>
+                        <div class="desc">Logged in successfully</div>
+                      </div>
+                      <div class="d-flex item position-relative mb-5"> 
+                        <div class="time">03:45</div>
+                        <div class="desc">Logged in successfully</div>
+                      </div>
+                      <div class="d-flex item position-relative mb-5"> 
+                        <div class="time">01:53</div>
+                        <div class="desc">Logged in successfully</div>
+                      </div>
+                      <div class="d-flex item position-relative mb-5"> 
+                        <div class="time">03:08</div>
+                        <div class="desc">Logged in successfully</div>
+                      </div>
+                      <div class="d-flex item position-relative mb-5"> 
+                        <div class="time">05:35</div>
+                        <div class="desc">You have successfully updated your password</div>
+                      </div>
+                      <div class="d-flex item position-relative mb-5"> 
+                        <div class="time">05:35</div>
+                        <div class="desc">You have successfully updated your password</div>
+                      </div>
+                      <div class="d-flex item position-relative mb-5"> 
+                        <div class="time">05:35</div>
+                        <div class="desc">You have successfully updated your password</div>
+                      </div>
+                      <div class="d-flex item position-relative mb-5"> 
+                        <div class="time">05:35</div>
+                        <div class="desc">You have successfully updated your password</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8"> 
+                <div class="item-card-sm min-h-lg">
+                  <div class="title-sm mb-3 custom-desc d-flex justify-content-between align-items-center custom-action-right">
+                    <div class="d-block"> 
+                      <div class="d-flex align-items-end align-items-center">
+                        <div class="icon"><img src="client/images/1-17.svg" alt=""></div>
+                        <div class="text">Member Statistics</div>
+                      </div>
+                      <div class="desc">Total 0 members</div>
+                    </div>
+                    <div class="action-right d-flex">
+                      <select class="form-control custom-form-sm" name=""> 
+                        <option value="">2024/03/04 - 2024/03/10</option>
+                      </select>
+                      <select class="form-control custom-form-sm" name=""> 
+                        <option value="">Level 1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="content-sm">
+                    <div class="table-custom-1 mb-4">
+                      <div class="table-responsive"> 
+                        <table class="table table-separate table-striped">
+                          <thead>
+                            <tr>
+                              <th>No.</th>
+                              <th>User</th>
+                              <th>Personal</th>
+                              <th>System</th>
+                              <th>Time</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                            <tr>
+                              <td>10</td>
+                              <td>Username</td>
+                              <td>$100</td>
+                              <td>$100</td>
+                              <td>2024-02-02 01:04:18</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="block-pagination d-flex justify-content-end">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">01</a></li>
+                          <li class="page-item active"><a class="page-link" href="#">02</a></li>
+                          <li class="page-item"><a class="page-link" href="#">03</a></li>
+                          <li class="page-item"><a class="page-link" href="#">04</a></li>
+                          <li class="page-item"><a class="page-link" href="#">05</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="hvr-float" id="backtop" onclick="backtotop()" title="Go to top"><img src="client/images/4-3-top.svg" alt=""></button>
+      </div>
+    </div>
+    <!-- main js-->
+    <script src="client/js/all.min.js"></script>
+    <script src="client/js/jquery.min.js"></script>
+    <script src="client/js/moment.js"></script>
+    <script src="client/js/popper.min.js"></script>
+    <script src="client/js/bootstrap.min.js"></script>
+    <script src="client/js/main.js"></script>
+    <script>
+      $(function () {
+          if ($(window).width() > 769) {
+              $('.menu .dropdown > a').click(function () {
+                  location.href = this.href;
+              });
+          }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+header.mb-5
+    nav.navbar.navbar-expand-lg.bg-body-tertiary
+        .container
+            a.navbar-brand(href='#') 
+                img(src="client/images/logo.svg", alt="")
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                img(src="client/images/4-1-menu.svg", alt="")
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                    li.nav-item
+                        a.nav-link.position-relative.active(aria-current='page' href='index.html') Dashboard
+                    li.nav-item
+                        a.nav-link.position-relative(href='wallet.html') Wallet
+                    li.nav-item
+                        a.nav-link.position-relative(href='comission.html') Comission
+                    li.nav-item
+                        a.nav-link.position-relative(href='copy-trade.html') Copy trade
+                    li.nav-item
+                        a.nav-link.position-relative(href='presale.html') Presale
+                    li.nav-item
+                        a.nav-link.position-relative(href='account.html') Account
+                .action-right.d-flex.align-items-center
+                    .item-icon-login.d-flex.align-items-center
+                        a(data-bs-toggle="modal" data-bs-target="#languageModal")
+                            img(src="client/images/2-flag-en.svg", alt="")
+                        a(href="#")
+                            img(src="client/images/2-2-login.svg", alt="")
+                    .item-user 
+                        a(href="login.html")
+                            img(src="client/images/2-1-user-avatar-filled.svg", alt="")
+    // Modal
+    #languageModal.modal.modal-custom-main.fade(tabindex='-1' aria-labelledby='languageModalLabel' aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-body
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                        img(src="client/images/close.svg", alt="")
+                    .title-lg.text-center.mb-4
+                        h3 Change Language
+                    .list-language 
+                        .row
+                            .col-4 
+                                .item-language.mb-3
+                                    a.d-flex.align-items-center(href="") 
+                                        .icon
+                                            img(src="client/images/2-flag-en.svg", alt="")
+                                        .text English
+                            .col-4 
+                                .item-language.mb-3
+                                    a.d-flex.align-items-center(href="") 
+                                        .icon
+                                            img(src="client/images/2-flag-en.svg", alt="")
+                                        .text English
+                            .col-4 
+                                .item-language.mb-3
+                                    a.d-flex.align-items-center(href="") 
+                                        .icon
+                                            img(src="client/images/2-flag-en.svg", alt="")
+                                        .text English
+                                    

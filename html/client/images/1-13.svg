@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2eaa66"/>
+      <stop offset="0.768" stop-color="#1ed37c"/>
+      <stop offset="1" stop-color="#3ec76d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1370" data-name="Group 1370" transform="translate(-724.5 -937.5)">
+    <rect id="Rectangle_61" data-name="Rectangle 61" width="71" height="71" rx="22" transform="translate(725 938)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+    <g id="Investment" transform="translate(736.798 956.574)">
+      <path id="Path_925" data-name="Path 925" d="M31.5,40.04a5.318,5.318,0,0,0-4.271.8,4.576,4.576,0,0,0-1.441,2.025,4.578,4.578,0,0,0-1.442-2.025,5.322,5.322,0,0,0-4.271-.8.5.5,0,0,0-.358.358,5.319,5.319,0,0,0,.8,4.271,5.739,5.739,0,0,0,4.4,1.915V50.03a.875.875,0,0,0,1.75,0V46.585a5.739,5.739,0,0,0,4.4-1.915,5.32,5.32,0,0,0,.8-4.271A.5.5,0,0,0,31.5,40.04Z" transform="translate(-2.184 -19.235)" fill="#fff"/>
+      <path id="Path_926" data-name="Path 926" d="M23.823,1.426a8.62,8.62,0,1,0,8.62,8.62,8.621,8.621,0,0,0-8.62-8.62Zm-.629,8.051h1.235a2.088,2.088,0,1,1,0,4.175v1.028a.675.675,0,1,1-1.35,0V13.653H21.675a.675.675,0,1,1,0-1.35h2.754a.738.738,0,1,0,0-1.475H23.194a2.189,2.189,0,0,1-.11-4.376V5.412a.675.675,0,1,1,1.35,0V6.44h1.538a.675.675,0,0,1,0,1.35H23.194a.844.844,0,1,0,0,1.687Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>
